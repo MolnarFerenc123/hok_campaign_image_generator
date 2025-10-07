@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'DejaVu Sans'; /* Adj egy nevet, amin hivatkozni fogsz rá */
+  src: url('fonts/DejaVuSans.woff2') format('woff2'); /* Útvonal a fájlhoz */
+  font-weight: normal; /* Ez a normál vastagságú betű */
+  font-style: normal;
+}
+
+/* Ha van félkövér változatod is, azt is add hozzá */
+@font-face {
+  font-family: 'DejaVu Sans'; /* Ugyanazt a nevet használd! */
+  src: url('fonts/DejaVuSans-Bold.woff2') format('woff2'); /* Útvonal a bold fájlhoz */
+  font-weight: bold; /* Ez a félkövér (bold) vastagságú betű */
+  font-style: normal;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#kep-kontener {
+    position: relative; /* Ez kell a szöveg pontos pozicionálásához */
+    width: fit-content; /* A konténer akkora legyen, mint a kép */
+    margin: 20px auto; /* Középre igazítás */
+}
+
+/* A szöveg stílusozása és pozicionálása */
+/* A szöveg stílusozása és pozicionálása */
+/* A szöveg stílusozása és pozicionálása */
+#szoveg-helye {
+    position: absolute;
+    
+    /* VÍZSZINTES ÉS FÜGGŐLEGES KÖZÉPRE IGAZÍTÁS */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* SZÉLESSÉG BEÁLLÍTÁSA */
+    width: 100%;        /* A böngészőnek segít a számításban */
+    max-width: 80%;     /* ÚJ SOR: A maximális szélesség korlátozása */
+    text-align: center; 
+
+    /* AZ EREDETI STÍLUSOK MARADNAK */
+    font-family: "DejaVu Sans", sans-serif;
+    font-size: 50px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 10px 7px 13px rgba(0, 0, 0, 0.6);
+    -webkit-text-stroke: 2px black; 
+}
+
+input, button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+}

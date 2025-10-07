@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Szöveg Cserélő</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Grafika személyre szabása</h1>
+    <p>Írd be a kívánt szöveget, majd kattints a letöltés gombra!</p>
+
+    <div id="kep-kontener">
+        <img src="hatter.png" alt="Háttérkép">
+        <div id="szoveg-helye">Eredeti szöveg</div>
+    </div>
+
+    <input type="text" id="beviteli-mezo" placeholder="Írd ide az új szöveget...">
+    <button id="letoltes-gomb">Kép letöltése</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
